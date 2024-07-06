@@ -3,11 +3,11 @@ package Login_page;
 import java.util.*;
 
 public class Bank_customer {
-    Scanner scan = new Scanner(System.in);
+
+
     public String customer_name, customer_email;
     public long mobile_number, customer_aadhar, customer_acc_no;
     public int acc_pin, balance, customer_id;
-
     public Bank_customer(String customer_name, long mobile_number, String customer_email, long customer_aadhar, int acc_pin, long customer_acc_no) {
         this.customer_name = customer_name;
         this.customer_email = customer_email;
@@ -15,8 +15,7 @@ public class Bank_customer {
         this.customer_aadhar = customer_aadhar;
         this.balance = 1000;
         Random random = new Random();
-        int customer_id = (int) (random.nextDouble() * 1000);
-        this.customer_id = customer_id;
+        this.customer_id = (int) (random.nextDouble() * 1000);
         this.customer_acc_no = customer_acc_no;
         this.acc_pin = acc_pin;
 

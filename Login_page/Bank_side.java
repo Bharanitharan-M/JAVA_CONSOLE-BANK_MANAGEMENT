@@ -17,15 +17,14 @@ public class Bank_side {
             String enter_bank_password = scan.nextLine();
             if (enter_bank_username.equals(Bank_username) && enter_bank_password.equals(Bank_password)) {
                 System.out.println("\t\t\t\t\t\t\t\t\tLogin Successfully!");
+                return 1;
 
-                login_success = 1;
-                break;
             } else {
                 bank_login_limit--;
                 System.out.println("\t\t\t\t\t* There are only " + bank_login_limit + " chances remaining.");
             }
         }
-        return 1;
+        return 0;
     }
 
 }
